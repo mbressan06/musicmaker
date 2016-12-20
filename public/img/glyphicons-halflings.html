@@ -1,0 +1,533 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- META TAGS -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width" />
+        <meta name="google-site-verification" content="xsDMz4RqArpqNjT-jenNPWwUvNPRPX4pNEzdZt_yOQo" />
+        <meta name="title" content="Music Maker - The Music Like You Imagine">        
+
+        <!-- Title -->
+        <title>Errors</title>
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- Style Sheet-->
+        
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="/css/responsive.css" />
+	<link rel="stylesheet" type="text/css" href="/css/prettyPhoto.css" />
+	<link rel="stylesheet" type="text/css" href="/css/supersized.css" />
+	<link rel="stylesheet" type="text/css" href="/css/supersized.shutter.css" />
+	<link rel="stylesheet" type="text/css" href="/css/jquery.jscrollpane.css" />
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.easing.min.js"></script>
+
+                            
+	<script type="text/javascript" src="/js/supersized.3.2.7.min.js"></script>
+	<script type="text/javascript" src="/js/supersized.shutter.min.js"></script>
+            <script type="text/javascript">
+
+                jQuery(function($) {
+
+                    $.supersized({
+                        //Functionality
+                        slideshow: 1, // Slideshow on/off
+                        autoplay: 1, // Slideshow starts playing automatically
+                        start_slide: 1, // Start slide (0 is random)
+                        stop_loop: 0, // Pauses slideshow on last slide
+                        random: 0, // Randomize slide order (Ignores start slide)
+                        slide_interval: 3000, // Length between transitions
+                        transition: 6, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+                        transition_speed: 1000, // Speed of transition
+                        new_window: 1, // Image links open in new window/tab
+                        pause_hover: 0, // Pause slideshow on hover
+                        keyboard_nav: 1, // Keyboard navigation on/off
+                        performance: 1, // 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+                        image_protect: 1, // Disables image dragging and right click with Javascript
+
+                        //Size & Position						   
+                        min_width: 0, // Min width allowed (in pixels)
+                        min_height: 0, // Min height allowed (in pixels)
+                        vertical_center: 1, // Vertically center background
+                        horizontal_center: 1, // Horizontally center background
+                        fit_always: 0, // Image will never exceed browser width or height (Ignores min. dimensions)
+                        fit_portrait: 1, // Portrait images will not exceed browser height
+                        fit_landscape: 0, // Landscape images will not exceed browser width
+
+                        //Components							
+                        slide_links: 'blank', // Individual links for each slide (Options: false, 'num', 'name', 'blank')
+                        pager: '.pagination',
+                        thumb_links: 1, // Individual thumb links for each slide
+                        thumbnail_navigation: 0, // Thumbnail navigation
+                        slides: [// Slideshow Images
+                                                            {image: '/img/images/slider-img.png'},
+                                                    ],
+                        //Theme Options			   
+                        progress_bar: 1, // Timer for each slide							
+                        mouse_scrub: 0
+
+                    });
+                });
+            </script>            
+        
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+            <link rel="stylesheet" href="css/ie.css">
+        <![endif]-->
+
+    </head>
+    <body>				
+        <div class="wrapper">
+
+            <!-- HEADER -->
+<div class="header-wrapper">
+    <div class="container">
+        <header class="row">
+
+            <!--logo-->
+            <div class="span4 logo">
+                <a href="/"><img src="/img/logo.png" alt="" /></a>                
+            </div>
+            <!--logo-->
+            
+            <!--Navigation-->
+<pre class="cake-error"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr578e47fa3ab27-trace').style.display = (document.getElementById('cakeErr578e47fa3ab27-trace').style.display == 'none' ? '' : 'none');"><b>Notice</b> (8)</a>: Undefined variable: active [<b>APP/View/Elements/estrutura/header/nav/desktop.ctp</b>, line <b>1</b>]<div id="cakeErr578e47fa3ab27-trace" class="cake-stack-trace" style="display: none;"><a href="javascript:void(0);" onclick="document.getElementById('cakeErr578e47fa3ab27-code').style.display = (document.getElementById('cakeErr578e47fa3ab27-code').style.display == 'none' ? '' : 'none')">Code</a> <a href="javascript:void(0);" onclick="document.getElementById('cakeErr578e47fa3ab27-context').style.display = (document.getElementById('cakeErr578e47fa3ab27-context').style.display == 'none' ? '' : 'none')">Context</a><pre id="cakeErr578e47fa3ab27-code" class="cake-code-dump" style="display: none;"><span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">&lt;?php&nbsp;$action&nbsp;</span><span style="color: #007700">=&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">action&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #DD0000">'display'</span><span style="color: #007700">)&nbsp;?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">params</span><span style="color: #007700">[</span><span style="color: #DD0000">'pass'</span><span style="color: #007700">][</span><span style="color: #0000BB">0</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">$active</span><span style="color: #007700">;</span><span style="color: #0000BB">?&gt;</span></span></code></span></pre><pre id="cakeErr578e47fa3ab27-context" class="cake-context" style="display: none;">$viewFile = &#039;/var/www/vhosts/musicmaker.com.br/httpdocs/app/View/Elements/estrutura/header/nav/desktop.ctp&#039;
+$dataForView = array(
+	&#039;class&#039; =&gt; &#039;ImgController&#039;,
+	&#039;plugin&#039; =&gt; null,
+	&#039;code&#039; =&gt; (int) 404,
+	&#039;url&#039; =&gt; &#039;/img/glyphicons-halflings.png&#039;,
+	&#039;name&#039; =&gt; &#039;Controller class ImgController could not be found.&#039;,
+	&#039;error&#039; =&gt; object(MissingControllerException) {
+		[protected] _messageTemplate =&gt; &#039;Controller class %s could not be found.&#039;
+		[protected] _attributes =&gt; array(
+			[maximum depth reached]
+		)
+		[protected] _responseHeaders =&gt; null
+		[protected] message =&gt; &#039;Controller class ImgController could not be found.&#039;
+		[protected] code =&gt; (int) 404
+		[protected] file =&gt; &#039;/var/www/vhosts/musicmaker.com.br/httpdocs/lib/Cake/Routing/Dispatcher.php&#039;
+		[protected] line =&gt; (int) 156
+	},
+	&#039;_serialize&#039; =&gt; array(
+		(int) 0 =&gt; &#039;code&#039;,
+		(int) 1 =&gt; &#039;url&#039;,
+		(int) 2 =&gt; &#039;name&#039;
+	),
+	&#039;menu&#039; =&gt; array(
+		(int) 0 =&gt; array(
+			&#039;Categoria&#039; =&gt; array(
+				[maximum depth reached]
+			),
+			&#039;SubCategoria&#039; =&gt; array(
+				[maximum depth reached]
+			)
+		),
+		(int) 1 =&gt; array(
+			&#039;Categoria&#039; =&gt; array(
+				[maximum depth reached]
+			),
+			&#039;SubCategoria&#039; =&gt; array(
+				[maximum depth reached]
+			)
+		)
+	),
+	&#039;content_for_layout&#039; =&gt; &#039;&lt;h2&gt;Missing Controller&lt;/h2&gt;
+&lt;p class=&quot;error&quot;&gt;
+	&lt;strong&gt;Error: &lt;/strong&gt;
+	&lt;em&gt;ImgController&lt;/em&gt; could not be found.&lt;/p&gt;
+&lt;p class=&quot;error&quot;&gt;
+	&lt;strong&gt;Error: &lt;/strong&gt;
+	Create the class &lt;em&gt;ImgController&lt;/em&gt; below in file: app/Controller/ImgController.php&lt;/p&gt;
+&lt;pre&gt;
+&amp;lt;?php
+class ImgController extends AppController {
+
+}
+&lt;/pre&gt;
+&lt;p class=&quot;notice&quot;&gt;
+	&lt;strong&gt;Notice: &lt;/strong&gt;
+	If you want to customize this error message, create app/View/Errors/missing_controller.ctp&lt;/p&gt;
+
+&lt;h3&gt;Stack Trace&lt;/h3&gt;
+&lt;ul class=&quot;cake-stack-trace&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot; onclick=&quot;traceToggle(event, &#039;file-excerpt-0&#039;)&quot;&gt;APP/webroot/index.php line 110&lt;/a&gt; &amp;rarr; &lt;a href=&quot;#&quot; onclick=&quot;traceToggle(event, &#039;trace-args-0&#039;)&quot;&gt;Dispatcher-&gt;dispatch(CakeRequest, CakeResponse)&lt;/a&gt; &lt;div id=&quot;file-excerpt-0&quot; class=&quot;cake-code-dump&quot; style=&quot;display:none;&quot;&gt;&lt;pre&gt;&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$Dispatcher&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;dispatch&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;(&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;
+&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;new&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;CakeRequest&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;(),&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;
+&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;new&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;CakeResponse&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;
+&lt;span class=&quot;code-highlight&quot;&gt;&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;
+&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt; &lt;div id=&quot;trace-args-0&quot; class=&quot;cake-code-dump&quot; style=&quot;display: none;&quot;&gt;&lt;pre&gt;object(CakeRequest) {
+	params =&amp;gt; array(
+		[maximum depth reached]
+	)
+	data =&amp;gt; array([maximum depth reached])
+	query =&amp;gt; array([maximum depth reached])
+	url =&amp;gt; &amp;#039;img/glyphicons-halflings.png&amp;#039;
+	base =&amp;gt; &amp;#039;&amp;#039;
+	webroot =&amp;gt; &amp;#039;/&amp;#039;
+	here =&amp;gt; &amp;#039;/img/glyphicons-halflings.png&amp;#039;
+	[protected] _detectors =&amp;gt; array(
+		[maximum depth reached]
+	)
+	[protected] _input =&amp;gt; &amp;#039;&amp;#039;
+}
+object(CakeResponse) {
+	[protected] _statusCodes =&amp;gt; array(
+		[maximum depth reached]
+	)
+	[protected] _mimeTypes =&amp;gt; array(
+		[maximum depth reached]
+	)
+	[protected] _protocol =&amp;gt; &amp;#039;HTTP/1.1&amp;#039;
+	[protected] _status =&amp;gt; (int) 200
+	[protected] _contentType =&amp;gt; &amp;#039;text/html&amp;#039;
+	[protected] _headers =&amp;gt; array([maximum depth reached])
+	[protected] _body =&amp;gt; null
+	[protected] _file =&amp;gt; null
+	[protected] _fileRange =&amp;gt; null
+	[protected] _charset =&amp;gt; &amp;#039;UTF-8&amp;#039;
+	[protected] _cacheDirectives =&amp;gt; array([maximum depth reached])
+	[protected] _cookies =&amp;gt; array([maximum depth reached])
+}&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+function traceToggle(event, id) {
+	var el = document.getElementById(id);
+	el.style.display = (el.style.display === &#039;block&#039;) ? &#039;none&#039; : &#039;block&#039;;
+	event.preventDefault();
+	return false;
+}
+&lt;/script&gt;
+&#039;,
+	&#039;scripts_for_layout&#039; =&gt; &#039;&#039;,
+	&#039;title_for_layout&#039; =&gt; &#039;Errors&#039;
+)
+$class = &#039;ImgController&#039;
+$plugin = null
+$code = (int) 404
+$url = &#039;/img/glyphicons-halflings.png&#039;
+$name = &#039;Controller class ImgController could not be found.&#039;
+$error = object(MissingControllerException) {
+	[protected] _messageTemplate =&gt; &#039;Controller class %s could not be found.&#039;
+	[protected] _attributes =&gt; array(
+		&#039;class&#039; =&gt; &#039;ImgController&#039;,
+		&#039;plugin&#039; =&gt; null
+	)
+	[protected] _responseHeaders =&gt; null
+	[protected] message =&gt; &#039;Controller class ImgController could not be found.&#039;
+	[protected] code =&gt; (int) 404
+	[protected] file =&gt; &#039;/var/www/vhosts/musicmaker.com.br/httpdocs/lib/Cake/Routing/Dispatcher.php&#039;
+	[protected] line =&gt; (int) 156
+}
+$_serialize = array(
+	(int) 0 =&gt; &#039;code&#039;,
+	(int) 1 =&gt; &#039;url&#039;,
+	(int) 2 =&gt; &#039;name&#039;
+)
+$menu = array(
+	(int) 0 =&gt; array(
+		&#039;Categoria&#039; =&gt; array(
+			&#039;id&#039; =&gt; &#039;1&#039;,
+			&#039;nome&#039; =&gt; &#039;Guitarras&#039;,
+			&#039;descricao&#039; =&gt; &#039;Descrição das guitarras....&#039;,
+			&#039;imagem&#039; =&gt; &#039;028b8bef0f03fb527ce9bbc06902d331/stk-natural-ash-006_21.jpg&#039;,
+			&#039;created&#039; =&gt; &#039;2013-11-06 16:17:00&#039;,
+			&#039;modified&#039; =&gt; &#039;2013-11-27 16:14:08&#039;
+		),
+		&#039;SubCategoria&#039; =&gt; array(
+			(int) 0 =&gt; array(
+				[maximum depth reached]
+			),
+			(int) 1 =&gt; array(
+				[maximum depth reached]
+			),
+			(int) 2 =&gt; array(
+				[maximum depth reached]
+			),
+			(int) 3 =&gt; array(
+				[maximum depth reached]
+			),
+			(int) 4 =&gt; array(
+				[maximum depth reached]
+			)
+		)
+	),
+	(int) 1 =&gt; array(
+		&#039;Categoria&#039; =&gt; array(
+			&#039;id&#039; =&gt; &#039;2&#039;,
+			&#039;nome&#039; =&gt; &#039;Bass&#039;,
+			&#039;descricao&#039; =&gt; &#039;&#039;,
+			&#039;imagem&#039; =&gt; &#039;ca4103a5e6809c7e14ec7f4fcf676bb5/bss-4-pb-natural-ash-bass-008_22.jpg&#039;,
+			&#039;created&#039; =&gt; &#039;2013-12-09 13:36:55&#039;,
+			&#039;modified&#039; =&gt; &#039;2013-12-09 13:36:55&#039;
+		),
+		&#039;SubCategoria&#039; =&gt; array(
+			(int) 0 =&gt; array(
+				[maximum depth reached]
+			),
+			(int) 1 =&gt; array(
+				[maximum depth reached]
+			),
+			(int) 2 =&gt; array(
+				[maximum depth reached]
+			)
+		)
+	)
+)
+$content_for_layout = &#039;&lt;h2&gt;Missing Controller&lt;/h2&gt;
+&lt;p class=&quot;error&quot;&gt;
+	&lt;strong&gt;Error: &lt;/strong&gt;
+	&lt;em&gt;ImgController&lt;/em&gt; could not be found.&lt;/p&gt;
+&lt;p class=&quot;error&quot;&gt;
+	&lt;strong&gt;Error: &lt;/strong&gt;
+	Create the class &lt;em&gt;ImgController&lt;/em&gt; below in file: app/Controller/ImgController.php&lt;/p&gt;
+&lt;pre&gt;
+&amp;lt;?php
+class ImgController extends AppController {
+
+}
+&lt;/pre&gt;
+&lt;p class=&quot;notice&quot;&gt;
+	&lt;strong&gt;Notice: &lt;/strong&gt;
+	If you want to customize this error message, create app/View/Errors/missing_controller.ctp&lt;/p&gt;
+
+&lt;h3&gt;Stack Trace&lt;/h3&gt;
+&lt;ul class=&quot;cake-stack-trace&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot; onclick=&quot;traceToggle(event, &#039;file-excerpt-0&#039;)&quot;&gt;APP/webroot/index.php line 110&lt;/a&gt; &amp;rarr; &lt;a href=&quot;#&quot; onclick=&quot;traceToggle(event, &#039;trace-args-0&#039;)&quot;&gt;Dispatcher-&gt;dispatch(CakeRequest, CakeResponse)&lt;/a&gt; &lt;div id=&quot;file-excerpt-0&quot; class=&quot;cake-code-dump&quot; style=&quot;display:none;&quot;&gt;&lt;pre&gt;&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;$Dispatcher&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;dispatch&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;(&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;
+&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;new&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;CakeRequest&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;(),&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;
+&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;new&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;CakeResponse&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;
+&lt;span class=&quot;code-highlight&quot;&gt;&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color: #007700&quot;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/span&gt;
+&lt;code&gt;&lt;span style=&quot;color: #000000&quot;&gt;&lt;span style=&quot;color: #0000BB&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt; &lt;div id=&quot;trace-args-0&quot; class=&quot;cake-code-dump&quot; style=&quot;display: none;&quot;&gt;&lt;pre&gt;object(CakeRequest) {
+	params =&amp;gt; array(
+		[maximum depth reached]
+	)
+	data =&amp;gt; array([maximum depth reached])
+	query =&amp;gt; array([maximum depth reached])
+	url =&amp;gt; &amp;#039;img/glyphicons-halflings.png&amp;#039;
+	base =&amp;gt; &amp;#039;&amp;#039;
+	webroot =&amp;gt; &amp;#039;/&amp;#039;
+	here =&amp;gt; &amp;#039;/img/glyphicons-halflings.png&amp;#039;
+	[protected] _detectors =&amp;gt; array(
+		[maximum depth reached]
+	)
+	[protected] _input =&amp;gt; &amp;#039;&amp;#039;
+}
+object(CakeResponse) {
+	[protected] _statusCodes =&amp;gt; array(
+		[maximum depth reached]
+	)
+	[protected] _mimeTypes =&amp;gt; array(
+		[maximum depth reached]
+	)
+	[protected] _protocol =&amp;gt; &amp;#039;HTTP/1.1&amp;#039;
+	[protected] _status =&amp;gt; (int) 200
+	[protected] _contentType =&amp;gt; &amp;#039;text/html&amp;#039;
+	[protected] _headers =&amp;gt; array([maximum depth reached])
+	[protected] _body =&amp;gt; null
+	[protected] _file =&amp;gt; null
+	[protected] _fileRange =&amp;gt; null
+	[protected] _charset =&amp;gt; &amp;#039;UTF-8&amp;#039;
+	[protected] _cacheDirectives =&amp;gt; array([maximum depth reached])
+	[protected] _cookies =&amp;gt; array([maximum depth reached])
+}&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+function traceToggle(event, id) {
+	var el = document.getElementById(id);
+	el.style.display = (el.style.display === &#039;block&#039;) ? &#039;none&#039; : &#039;block&#039;;
+	event.preventDefault();
+	return false;
+}
+&lt;/script&gt;
+&#039;
+$scripts_for_layout = &#039;&#039;
+$title_for_layout = &#039;Errors&#039;</pre><pre class="stack-trace">include - APP/View/Elements/estrutura/header/nav/desktop.ctp, line 1
+View::_evaluate() - CORE/Cake/View/View.php, line 931
+View::_render() - CORE/Cake/View/View.php, line 893
+View::_renderElement() - CORE/Cake/View/View.php, line 1191
+View::element() - CORE/Cake/View/View.php, line 408
+include - APP/View/Elements/estrutura/header/nav.ctp, line 2
+View::_evaluate() - CORE/Cake/View/View.php, line 931
+View::_render() - CORE/Cake/View/View.php, line 893
+View::_renderElement() - CORE/Cake/View/View.php, line 1191
+View::element() - CORE/Cake/View/View.php, line 408
+include - APP/View/Elements/estrutura/header.ctp, line 12
+View::_evaluate() - CORE/Cake/View/View.php, line 931
+View::_render() - CORE/Cake/View/View.php, line 893
+View::_renderElement() - CORE/Cake/View/View.php, line 1191
+View::element() - CORE/Cake/View/View.php, line 408
+include - APP/View/Layouts/default.ctp, line 135
+View::_evaluate() - CORE/Cake/View/View.php, line 931
+View::_render() - CORE/Cake/View/View.php, line 893</pre></div></pre>
+<nav class="desktop-nav span7" style="width: 660px; margin-left: -15px;">
+    <ul>
+        <li>
+            <a href="/" class="">Home</a>        </li>        
+        			            <li>
+                <a href="/categoria/index/1" class="">Guitars</a>                <ul class="sub-menu">
+                                            <li>
+                            <a href="/subcategoria/index/1">STK</a>                        </li>
+                                            <li>
+                            <a href="/subcategoria/index/2">TLS</a>                        </li>
+                                            <li>
+                            <a href="/subcategoria/index/3">LPS</a>                        </li>
+                                            <li>
+                            <a href="/subcategoria/index/4">Custom Pro</a>                        </li>
+                                            <li>
+                            <a href="/subcategoria/index/5">LTD Special</a>                        </li>
+                                    </ul>
+            </li>
+        			            <li>
+                <a href="/categoria/index/2" class="">Bass</a>                <ul class="sub-menu">
+                                            <li>
+                            <a href="/subcategoria/index/9">BSS 4</a>                        </li>
+                                            <li>
+                            <a href="/subcategoria/index/10">BSS 5</a>                        </li>
+                                            <li>
+                            <a href="/subcategoria/index/11">BSS 6</a>                        </li>
+                                    </ul>
+            </li>
+            
+        <li>
+            <a href="/pickups" class="">Pickups</a>        </li>
+        <li>
+            <a href="http://www.mmguitarshop.com.br" target="_blank">Store</a>
+        </li>
+        <li>
+            <a href="/galeria" class="">Gallery</a>        </li>
+        <li>
+            <a href="/pages/sobre" class="">Ivan Freitas</a>        </li>
+        <li class="last">
+            <a href="/contatos" class="">Contact Us</a>            
+        </li>
+    </ul>
+</nav><div class="mobile-nav">
+    <select name="select-box">        
+        <option value="/">Home</option>        
+                    
+			            <option value="/categoria/index/1">
+                Guitars            </option>
+                    
+			            <option value="/categoria/index/2">
+                Bass            </option>
+                
+        <option value="/pickups">Pickups</option>
+        <option value="http://www.mmguitarshop.com.br">Store</option>
+        <option value="/galeria">Gallery</option>        
+        <option value="/pages/sobre">Ivan Freitas</option>        
+        <option value="/contatos">Contact Us</option>
+    </select>
+</div><!--Navigation-->            
+            <!--Search-->            
+<div class="span1" style="width: 15px; margin-left: 0px;">
+    <form action="/img/glyphicons-halflings.png" class="search_form" id="glyphicons-halflingsPngForm" method="get" accept-charset="utf-8">    <div class="search-bar"><input name="search" placeholder="Pesquisa..." type="text" id="SearchSearch"/></div>    <input  name="search-btn" class="search" type="submit" value=""/>    </form></div>	
+<!--Search-->            
+        </header>
+    </div>
+</div>
+<!-- HEADER -->
+            <h2>Missing Controller</h2>
+<p class="error">
+	<strong>Error: </strong>
+	<em>ImgController</em> could not be found.</p>
+<p class="error">
+	<strong>Error: </strong>
+	Create the class <em>ImgController</em> below in file: app/Controller/ImgController.php</p>
+<pre>
+&lt;?php
+class ImgController extends AppController {
+
+}
+</pre>
+<p class="notice">
+	<strong>Notice: </strong>
+	If you want to customize this error message, create app/View/Errors/missing_controller.ctp</p>
+
+<h3>Stack Trace</h3>
+<ul class="cake-stack-trace">
+	<li><a href="#" onclick="traceToggle(event, 'file-excerpt-0')">APP/webroot/index.php line 110</a> &rarr; <a href="#" onclick="traceToggle(event, 'trace-args-0')">Dispatcher->dispatch(CakeRequest, CakeResponse)</a> <div id="file-excerpt-0" class="cake-code-dump" style="display:none;"><pre><code><span style="color: #000000"><span style="color: #0000BB">$Dispatcher</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">dispatch</span><span style="color: #007700">(</span></span></code>
+<code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">new&nbsp;</span><span style="color: #0000BB">CakeRequest</span><span style="color: #007700">(),</span></span></code>
+<code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">new&nbsp;</span><span style="color: #0000BB">CakeResponse</span><span style="color: #007700">()</span></span></code>
+<span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB"></span><span style="color: #007700">);</span></span></code></span>
+<code><span style="color: #000000"><span style="color: #0000BB"></span></span></code></pre></div> <div id="trace-args-0" class="cake-code-dump" style="display: none;"><pre>object(CakeRequest) {
+	params =&gt; array(
+		[maximum depth reached]
+	)
+	data =&gt; array([maximum depth reached])
+	query =&gt; array([maximum depth reached])
+	url =&gt; &#039;img/glyphicons-halflings.png&#039;
+	base =&gt; &#039;&#039;
+	webroot =&gt; &#039;/&#039;
+	here =&gt; &#039;/img/glyphicons-halflings.png&#039;
+	[protected] _detectors =&gt; array(
+		[maximum depth reached]
+	)
+	[protected] _input =&gt; &#039;&#039;
+}
+object(CakeResponse) {
+	[protected] _statusCodes =&gt; array(
+		[maximum depth reached]
+	)
+	[protected] _mimeTypes =&gt; array(
+		[maximum depth reached]
+	)
+	[protected] _protocol =&gt; &#039;HTTP/1.1&#039;
+	[protected] _status =&gt; (int) 200
+	[protected] _contentType =&gt; &#039;text/html&#039;
+	[protected] _headers =&gt; array([maximum depth reached])
+	[protected] _body =&gt; null
+	[protected] _file =&gt; null
+	[protected] _fileRange =&gt; null
+	[protected] _charset =&gt; &#039;UTF-8&#039;
+	[protected] _cacheDirectives =&gt; array([maximum depth reached])
+	[protected] _cookies =&gt; array([maximum depth reached])
+}</pre></div></li>
+</ul>
+<script type="text/javascript">
+function traceToggle(event, id) {
+	var el = document.getElementById(id);
+	el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+	event.preventDefault();
+	return false;
+}
+</script>
+
+            <div class="push"></div>
+
+        </div>
+
+        <!-- Footer -->
+<footer class="footer-wrapper " id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="span8">
+                <p>                    
+					© 2001 - 2016 All Rights Reserved - Forbidden total or partial reproduction.
+                </p>
+            </div>
+            <div class="span4 social-nav">
+                <a href="mailto:geazioliveira@gmail.com" style="width: 300px; height: 14px; display: inline-block; color: #e74d2e; padding-top: 8px;">                     
+                    Created By Geazi Oliveira
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer -->
+        
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script type="text/javascript" src="/js/jquery.selectBox.js"></script>
+	<script type="text/javascript" src="/js/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.hoverdir.js"></script>
+	<script type="text/javascript" src="/js/modernizr.custom.97074.js"></script>
+	<script type="text/javascript" src="/js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="/js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="/js/custom.js"></script>
+    </body>
+</html>
