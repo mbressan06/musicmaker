@@ -30,12 +30,15 @@ gem "faker"
 gem 'newrelic_rpm', '~> 3.9'
 gem 'hoptoad_notifier', '2.4.11'
 
+gem 'pg'
+
+
 group :development do
   gem 'mechanize','2.7.3'
 end
 
 group :production do
-  gem 'pg'
+
   gem 'unicorn'
 
   # Enable gzip compression on heroku, but don't compress images.
@@ -49,7 +52,6 @@ group :production do
 end
 
 group :development, :test do
-  gem 'sqlite3'
   gem 'factory_girl_rails'
   gem 'rspec-rails', '~> 3.0.0'
   gem 'spork', '~> 1.0rc'
