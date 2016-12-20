@@ -1,0 +1,13 @@
+---
+server_user: mbressan06
+server_domain: quirinus
+server_ssh_port: 22
+rails_env: development
+app_name: crmmusicmaker
+app_root: /var/www/musicmaker
+database_name: musicmaker_development
+database_user: mbressan06
+database_password: Rapadura1234
+app_repo: git@github.com:mbressan06/musicmaker.git
+app_repo_branch: master
+secret_key_base: 0f4442c3dbecb3565c9ee60c7a7b8c7fcfc620509bef3cf02a309824a7e6209330c697d054cbc2138dfd536416c3bc58631c2e711b0af6441ab45c42152a3fc3

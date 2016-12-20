@@ -32,7 +32,6 @@ gem 'hoptoad_notifier', '2.4.11'
 
 gem 'pg'
 
-
 group :development do
   gem 'mechanize','2.7.3'
 end
@@ -65,3 +64,4 @@ group :test do
   gem 'simplecov', :require => false
 end
 
+gem 'rails_12factor', group: :production
