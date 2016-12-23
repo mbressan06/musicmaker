@@ -44,7 +44,7 @@ BASIC STYLES
 ****************************************************************************/
 
 body { background: #fff; color: #000; font: 14px Arial, Helvetica, sans-serif; }
-/* 
+/*
 a { color: #00e; text-decoration: none; }
 a:visited { color: #551a8b; }
 a:hover { color: #06e; text-decoration: underline; }
@@ -95,28 +95,48 @@ html, body {
 }
 .wrapper {
     min-height: 100%;
-    height: auto !important;
     height: 100%;
     margin: 0 auto -48px;
+    background: url(../img/slider-img.png) no-repeat left center #000;
+    width: 100%;
+    background: url('../img/slider-img.png') center center no-repeat;
+    background-size: cover;
+}
+.wrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,#333,#000);
+    opacity: .5;
 }
 .footer, .push {
     height: 48px;
 }
 
+.right {
+    float: right !important;
+}
+
+.left {
+    float: left !important;
+}
 /****************************************************************************
                                         HOME
 ****************************************************************************/
 .header-wrapper { width:100%;/*  background:url(../img/images/Navigation-bg.png) repeat; */  background: url(../img/images/footer-bg.png) repeat; line-height:60px; margin-bottom:33px; height:70px; position: relative;}
-.header-wrapper .logo { margin:0px !important; }
+.header-wrapper .logo { margin:0px !important; padding: 4px 0; }
 .header-wrapper .logo img { width: 250px; }
 
 .mobile-nav { display:none; }
-nav .active {  background:#e74d2e; border-radius: 20px; padding:7px 14px; } 
+nav .active {  background:#e74d2e; border-radius: 20px; padding:7px 14px; }
 nav .active:hover { color:#FFF; }
 nav { margin-top: 2px; }
 /*nav ul { margin: 0px 0px 0px 40px !important; }*/
 nav ul  li { display:inline-block; margin-right:12px; padding-bottom:30px; }
-nav ul li > a { font: 300 18px 'Open Sans', sans-serif, Times, serif; color:#fff;  
+nav ul li > a { font: 300 18px 'Open Sans', sans-serif, Times, serif; color:#fff;
                 transition: color 0.5s linear;
                 -moz-transition: color 0.5s linear;    /* FF3.7+ */
                 -o-transition: color 0.5s 1inear;      /* Opera 10.5 */
@@ -127,7 +147,7 @@ nav ul li > a:hover  { color:#e74d2e ;  }
 .sub-menu { display:none; }
 nav ul li ul { display:block; position:absolute; top:58px;  z-index:99999; background:url(../img/images/Navigation-bg.png) repeat; min-width:167px; border-top:2px solid #4ecca1; }
 nav ul li ul li { display: block; padding-bottom: 0px; margin-right: 0px; }
-nav ul li ul li a {  display:block; padding:10px 0px 7px 17px;/*  width:150px !important; */  border-bottom:1px solid #000; margin-right:0px;      
+nav ul li ul li a {  display:block; padding:10px 0px 7px 17px;/*  width:150px !important; */  border-bottom:1px solid #000; margin-right:0px;
                      transition: background-color 0.5s linear;
                      -moz-transition: background-color 0.5s linear;    /* FF3.7+ */
                      -o-transition: background-color 0.5s 1inear;      /* Opera 10.5 */
@@ -189,7 +209,7 @@ footer p { font: 400 14px 'Open Sans', sans-serif, Times, serif; color:#fff; lin
 .who-we { width:310px; text-align:center; margin:0px 0px 38px 0px; float:left; }
 .who-we figure { margin-bottom:20px; }
 
-#accordion .title { background:url(../img/images/acordian-title-bg.png) repeat;  cursor:pointer; width:275px; margin:0px 0px 14px 0px; outline:none; }	
+#accordion .title { background:url(../img/images/acordian-title-bg.png) repeat;  cursor:pointer; width:275px; margin:0px 0px 14px 0px; outline:none; }
 .second { background:none !important; }
 #accordion .title figure { width:50px; height:50px; border-radius:50%; float:left; margin:0px 16px 0px -27px; }
 #accordion .title h3 { margin:5px 0px 5px 10px; font: 300 15px 'Open Sans', sans-serif, Times, serif; color:#fff; background:url(../img/images/close-btn.png) no-repeat 95%; }
@@ -224,12 +244,16 @@ footer p { font: 400 14px 'Open Sans', sans-serif, Times, serif; color:#fff; lin
 .contact-info ul li span { font: 300 15px 'Open Sans', sans-serif, Times, serif; color:#909090; }
 .contact-info ul li a { color:#e74d2e; }
 
-input[type="text"]:focus,textarea:focus { 
-    -webkit-box-shadow:inset 0 1px 1px rgba(231,77,46,.6), 0 0 8px rgba(231,77,46,.6) !important; 
-    moz-box-shadow: inset 0 1px 1px rgba(231,77,46,.6), 0 0 8px rgba(231,77,46,.6) !important; 
+input[type="text"]:focus,textarea:focus {
+    -webkit-box-shadow:inset 0 1px 1px rgba(231,77,46,.6), 0 0 8px rgba(231,77,46,.6) !important;
+    moz-box-shadow: inset 0 1px 1px rgba(231,77,46,.6), 0 0 8px rgba(231,77,46,.6) !important;
     box-shadow: inset 0 1px 1px rgba(231,77,46,.6), 0 0 8px rgba(231,77,46,.6) !important;
 }
 
+#customer-login {
+    padding: 10px 5px;
+    margin-left: 17px;
+}
 /****************************************************************************
                                         Blog
 ****************************************************************************/
@@ -266,7 +290,7 @@ input[type="text"]:focus,textarea:focus {
 .bolg-pagi { margin-top:8px; }
 .wid-pagination li { display:inline-block; }
 .wid-pagination li:hover { position: relative; top: -8px; }
-.wid-pagination a { font: 300 15px 'Open Sans', sans-serif, Times, serif; color:#fff; height:23px; width:23px;  line-height:23px; text-align:center; display:inline-block; background:url(../img/images/Navigation-bg.png) repeat; 
+.wid-pagination a { font: 300 15px 'Open Sans', sans-serif, Times, serif; color:#fff; height:23px; width:23px;  line-height:23px; text-align:center; display:inline-block; background:url(../img/images/Navigation-bg.png) repeat;
                     transition: color 0.5s linear;
                     -moz-transition: color 0.5s linear;    /* FF3.7+ */
                     -o-transition: color 0.5s 1inear;      /* Opera 10.5 */
@@ -364,7 +388,7 @@ input[type="text"]:focus,textarea:focus {
 .my-selector a:hover span { display: block; }
 
 .my-selector a.selected { background: #4ecca1;}*/
-#tabs .fliter li {  margin-bottom: 10px; } 
+#tabs .fliter li {  margin-bottom: 10px; }
 .my-selector a span {
     position: relative;
     background: #88b7d5;
@@ -389,7 +413,7 @@ input[type="text"]:focus,textarea:focus {
 
 
 #project-eliment li { display: block; width:220px; height:160px; overflow: hidden; margin: 10px;  }
-#project-eliment li .port-overlay { display: none; width:184px; height:124px; background:url(../img/images/red-screen.png) repeat; position: absolute; top: 0px; left: 0px; padding: 18px;} 
+#project-eliment li .port-overlay { display: none; width:184px; height:124px; background:url(../img/images/red-screen.png) repeat; position: absolute; top: 0px; left: 0px; padding: 18px;}
 #project-eliment li .port-overlay p {  margin-bottom: 30px; position:relative;  }
 #project-eliment li .port-overlay span { background: url(../img/images/portfolio-date.png) no-repeat left;  font: 300 14px 'Open Sans', sans-serif, Times, serif; color:#fff; padding-left:25px; }
 
@@ -403,17 +427,17 @@ input[type="text"]:focus,textarea:focus {
 
 /****** 	Two Column  ******/
 
-#two-column #project-eliment li { width:450px; height:320px; } 
+#two-column #project-eliment li { width:450px; height:320px; }
 #two-column #project-eliment li a img { height: 100%; width: 100%; }
-#two-column #project-eliment li .port-overlay { width:414px; height:284px; } 
+#two-column #project-eliment li .port-overlay { width:414px; height:284px; }
 #two-column #project-eliment li .port-overlay .zoom  {  margin: 0px 0px 0px 144px; }
 
 
 /****** 	Three Column  ******/
 
-#three-column #project-eliment li { width:300px; height:215px; } 
+#three-column #project-eliment li { width:300px; height:215px; }
 #three-column #project-eliment li a img { height: 100%; width: 100%; }
-#three-column #project-eliment li .port-overlay { width:264px; height:179px; } 
+#three-column #project-eliment li .port-overlay { width:264px; height:179px; }
 #three-column #project-eliment li .port-overlay .zoom  {  margin: 0px 0px 0px 55px; }
 
 /****** Single Page ******/
@@ -444,7 +468,7 @@ input[type="text"]:focus,textarea:focus {
 
 
 /****************************************************************************
-                                        Timeline ON About page 
+                                        Timeline ON About page
 ****************************************************************************/
 .ie8 .jspDrag { top: -2px !important; }
 .ie9 .jspDrag { top: -2px !important; }
@@ -481,18 +505,18 @@ input[type="text"]:focus,textarea:focus {
 #dates a {
     line-height: 38px;
     padding-bottom: 10px;
-    font: 400 12px 'Open Sans', sans-serif, Times, serif !important; 
+    font: 400 12px 'Open Sans', sans-serif, Times, serif !important;
     color:#4ecca1 !important;
 }
 #dates .selected {
-    font-size: 38px; 
+    font-size: 38px;
 }
 
 #issues {
     width: 800px;
     height: 350px;
     overflow: hidden;
-}	
+}
 #issues li {
     width: 620px;
     height: 350px;
@@ -508,17 +532,17 @@ input[type="text"]:focus,textarea:focus {
 } */
 #issues li img {
     float: left;
-    width: 256px; 
+    width: 256px;
     /* height: 256px; */
     /* margin: 10px 30px 10px 50px;
     background: transparent;
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; IE 8   
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);IE 6 & 7      
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; IE 8
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);IE 6 & 7
     zoom: 1;
     -webkit-transition: all 2s ease-in-out;
     -moz-transition: all 2s ease-in-out;
     -o-transition: all 2s ease-in-out;
-    -ms-transition: all 2s ease-in-out; 
+    -ms-transition: all 2s ease-in-out;
     transition: all 2s ease-in-out;
     -webkit-transform: scale(0.7,0.7);
     -moz-transform: scale(0.7,0.7);
@@ -538,9 +562,9 @@ transform: scale(0.7,0.7); */
     font-weight: normal;
     line-height: 22px;
     text-shadow: #000 1px 1px 2px; */
-    font: 400 14px 'Open Sans', sans-serif, Times, serif !important; color: #fff; 
+    font: 400 14px 'Open Sans', sans-serif, Times, serif !important; color: #fff;
     margin-bottom:30px;
-    width:330px; 
+    width:330px;
     float:right;
 }
 
@@ -595,7 +619,7 @@ transform: scale(0.7,0.7); */
 } */
 
 /****************************************************************************
-                                        Isotops ON Portfolio page 
+                                        Isotops ON Portfolio page
 ****************************************************************************/
 /**** Isotope Filtering ****/
 
@@ -808,11 +832,11 @@ transform: scale(0.7,0.7); */
     display: block;
 }
 
-#ui-id-1 li:last-child {    
+#ui-id-1 li:last-child {
     border-bottom: none;
 }
 
-#ui-id-1 li:nth-child(odd)  {    
+#ui-id-1 li:nth-child(odd)  {
     background: url(../img/images/footer-bg.png) repeat;
 }
 
