@@ -41,6 +41,22 @@ ActiveAdmin.register_page "Dashboard" do
         #end
       end
 
+      column do
+        panel "Recent Leads" do
+          table_for Lead.order('id desc').limit(10).each do |customer|
+            column(:email)    {|customer| link_to(customer.email, admin_customer_path(customer)) }
+          end
+        end
+      end
+
+      column do
+        panel "Contacts" do
+          table_for Contact.order('id desc').limit(10).each do |contact|
+            column(:email)    {|contact| link_to(contact.email, admin_contact_path(contact)) }
+          end
+        end
+      end
+
     end # columns
 
     # Define your dashboard sections here. Each block will be
