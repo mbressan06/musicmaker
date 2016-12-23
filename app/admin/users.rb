@@ -38,7 +38,7 @@ ActiveAdmin.register User, :as => "Customer" do
     end
   end
 
-  sidebar "Active Admin Demo" do
-    render('/admin/sidebar_links', :model => 'users')
-  end
+  #sidebar "Active Admin Demo" do
+    #render('/admin/sidebar_links', :model => 'users')
+  #end
 end

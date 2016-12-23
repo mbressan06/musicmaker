@@ -37,9 +37,9 @@ ActiveAdmin.register Product do
     end.join(content_tag("br")).html_safe
   end
 
-  sidebar "Active Admin Demo" do
-    render('/admin/sidebar_links', :model => 'products')
-  end
+  #sidebar "Active Admin Demo" do
+    #render('/admin/sidebar_links', :model => 'products')
+  #end
 
 
 end

@@ -37,7 +37,7 @@ ActiveAdmin.register Order do
     end
   end
 
-  sidebar "Active Admin Demo" do
-    render('/admin/sidebar_links', :model => 'orders')
-  end
+  #sidebar "Active Admin Demo" do
+    #render('/admin/sidebar_links', :model => 'orders')
+  #end
 end
