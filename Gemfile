@@ -23,13 +23,14 @@ gem 'rails-i18n'
 gem 'spring',        group: :development
 
 gem 'activeadmin',  github: 'activeadmin'
+gem 'face_of_active_admin'
 gem 'inherited_resources', '~> 1.4.1'
 gem "devise"
 
 gem "faker"
 gem 'newrelic_rpm', '~> 3.9'
 gem 'hoptoad_notifier', '2.4.11'
-
+gem 'rails_12factor'
 gem 'pg'
 
 group :development do
@@ -43,8 +44,6 @@ group :production do
   # Enable gzip compression on heroku, but don't compress images.
   gem 'heroku-deflater'
 
-  # Heroku injects it if it's not in there already
-  gem 'rails_12factor'
 
   gem 'rack-throttle'
   gem 'rack-cache'
@@ -64,4 +63,3 @@ group :test do
   gem 'simplecov', :require => false
 end
 
-gem 'rails_12factor', group: :production
