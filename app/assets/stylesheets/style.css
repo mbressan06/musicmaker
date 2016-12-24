@@ -163,7 +163,7 @@ nav ul li ul li a { font: 300 15px 'Open Sans', sans-serif, Times, serif; color:
 .search-bar {  display:none; }
 .search-bar input { font: 300 18px 'Open Sans', sans-serif, Times, serif; color:#fff !important; background:none;  position:absolute; top:8px; right:15px;  display:block; width: 660px; height:35px !important;  padding-bottom:7px !important; border:none !important; border-radius:0px !important;  border-bottom:1px solid #fff !important;  }
 
-.slider-wrapper { width:100%; height: position:relative; }
+.slider-wrapper { width:100%;  position:relative; }
 .slider-wrapper a { width:51px; height:51px; display:inline-block; }
 .slider-wrapper a.prev { background:url(../img/images/Prev-icon.html) no-repeat; position:absolute; top:360px; left:32px; }
 .slider-wrapper a.prev:hover { background:url(../img/images/Prev-icon-hover.html) no-repeat; }

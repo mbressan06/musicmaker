@@ -215,10 +215,7 @@ a {
   color: #0088cc;
   text-decoration: none;
 }
- a:hover {
-  color: #005580;
-  text-decoration: underline;
-}
+
 .img-rounded {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
