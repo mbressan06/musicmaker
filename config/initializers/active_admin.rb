@@ -5,7 +5,7 @@ ActiveAdmin.setup do |config|
   # for each of the active admin pages.
   #
   config.site_title = "Music Maker CRM"
-  config.site_title_image = "images/logo-black.png"
+  config.site_title_image = "logo-black.png"
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
