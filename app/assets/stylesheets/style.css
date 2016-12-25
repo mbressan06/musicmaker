@@ -64,7 +64,7 @@ h5 { font: 600 16px 'Open Sans', sans-serif, Times, serif !important; color:#e74
 h5 span {  font: 300 13px 'Open Sans', sans-serif, Times, serif !important;  font-style:italic !important; color: #9c9c9c; font-style:italic; display:block; }
 h6 {  font: 300 15px 'Open Sans', sans-serif, Times, serif !important;  color:#4ecca1;}
 h6 a { color: #000; }
-h4.heading {  padding-bottom:12px; background:url(images/heading-bg.png) repeat-x bottom; margin-bottom:19px;   }
+h4.heading {  background:url(images/heading-bg.png) repeat-x bottom; margin-bottom:19px;   }
 
 ul {}
 ul li {}
@@ -251,6 +251,11 @@ input[type="text"]:focus,textarea:focus {
 }
 
 #customer-login {
+    padding: 10px 5px;
+    margin-left: 17px;
+}
+
+#new-customer {
     padding: 10px 5px;
     margin-left: 17px;
 }
