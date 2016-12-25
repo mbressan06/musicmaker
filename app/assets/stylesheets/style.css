@@ -418,7 +418,7 @@ input[type="text"]:focus,textarea:focus {
 #project-eliment li .port-overlay span { background: url(../img/images/portfolio-date.png) no-repeat left;  font: 300 14px 'Open Sans', sans-serif, Times, serif; color:#fff; padding-left:25px; }
 
 
-#project-eliment li .port-overlay .zoom { background:url(../img/images/zoom-defalt.png) no-repeat; width: 61px; height: 61px; display: inline-block;  margin: 0px 0px 0px 20px; */ }
+#project-eliment li .port-overlay .zoom { background:url(../img/images/zoom-defalt.png) no-repeat; width: 61px; height: 61px; display: inline-block;  margin: 0px 0px 0px 20px; }
 #project-eliment li .port-overlay .zoom:hover { background:url(../img/images/zoom-h.png) no-repeat; }
 #project-eliment li .port-overlay .info { background:url(../img/images/info.png) no-repeat; width: 61px; height: 61px; display: inline-block;  left: 118px;  }
 #project-eliment li .port-overlay .info:hover { background:url(../img/images/info-h.png) no-repeat;  }
