@@ -34,7 +34,6 @@ gem 'hoptoad_notifier', '2.4.11'
 gem 'rails_12factor'
 gem 'pg'
 
-gem 'slim'
 
 gem 'html2slim'
 gem 'execjs'
