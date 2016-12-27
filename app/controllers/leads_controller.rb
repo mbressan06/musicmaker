@@ -6,7 +6,7 @@ class LeadsController < InheritedResources::Base
   end
 
   def create
-    Lead.create(params[:lead])
+    @user = Lead.new(lead_params)
   end
 
   def update

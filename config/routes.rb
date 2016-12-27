@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
+  get 'custom_form' => "custom_form#index", :as => :custom_form
+  root 'leads#new'
 
   get 'leads' => 'leads#new', :as => :leads_new
 
@@ -25,7 +27,6 @@ Rails.application.routes.draw do
 
 
 
-  root 'leads#new'
 
 
 end
