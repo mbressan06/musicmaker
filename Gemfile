@@ -37,7 +37,9 @@ gem 'pg'
 gem 'slim'
 
 gem 'html2slim'
+gem 'nodejs-rails', '~> 0.0.1'
 
+gem 'node', '~> 0.0.2'
 
 group :development do
   gem 'mechanize','2.7.3'
