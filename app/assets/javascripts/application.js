@@ -14,4 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require defaults
+//= require d3
+//= requireD3Funnel
 //= require_tree .
