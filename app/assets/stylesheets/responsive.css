@@ -195,7 +195,7 @@ header { text-align:center; }
 .logo { float:none !important; }
 .desktop-nav { display:none; }
 .mobile-nav { display:block; }
-.mobile-nav select { background:url(images/footer-bg.png) repeat !important; color:#FFF;  }
+
 .mobile-nav select option { color:#fff; }
 .mobile-nav select option:hover { color:#000; }
 
