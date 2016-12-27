@@ -23,10 +23,12 @@ html
               = image_tag "logo-frontpage.png"
             nav.desktop-nav.span7.right[style="width: 660px; margin-left: -15px;"]
               ul
-                li
+                /li
                   = link_to "Custom Pro Form", custom_form_path(), class: "#{'active' if current_page? custom_form_path()}"
                 li
-                  = link_to "Ask for your code", lead_new_path(), class: "#{'active' if current_page? lead_new_path()}"
+                  = link_to "Ask for your code", root_path(), class: "#{'active' if current_page? root_path()}"
+                li
+                  = link_to "Custom Pro Form", root_path(), class: "#{'active' if current_page? root_path()}"
                 li
                   a[href="http://www.mmguitarshop.com.br/" target="_blank"]
                     | Store
@@ -48,7 +50,8 @@ html
                   | Go to website
                 option[value="http://www.musicmaker.com.br/contatos/"]
                   | Contact Us
-      = yield
+      .overlay-wrapper
+        = yield
       footer#footer.footer-wrapper.home-footer
         .container
           .row

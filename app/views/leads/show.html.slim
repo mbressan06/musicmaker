@@ -1,0 +1,21 @@
+p#notice
+  = notice
+p
+  strong
+    | Name:
+  = @lead.name
+p
+  strong
+    | Email:
+  = @lead.email
+p
+  strong
+    | Form hash:
+  = @lead.form_hash
+p
+  strong
+    | Stage:
+  = @lead.stage
+= link_to 'Edit', edit_lead_path(@lead)
+|  | 
+= link_to 'Back', leads_path

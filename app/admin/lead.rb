@@ -1,6 +1,7 @@
 ActiveAdmin.register Lead do
 
-  permit_params :surname, :email, :form_hash
+
+  permit_params :name, :email, :form_hash, :stage_id
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #

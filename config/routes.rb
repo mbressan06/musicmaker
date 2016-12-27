@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
+  resources :leads
+
+  resources :stages
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  root :to => "custom_form#index", :as => :custom_form
 
-  get "lead" => "lead#show"
-  get "lead/new" => "lead#new", :as => :lead_new
+  get 'leads' => 'leads#new', :as => :leads_new
+
 
   get "cart" => "cart#show"
   get "cart/add/:id" => "cart#add", :as => :add_to_cart
@@ -19,5 +22,10 @@ Rails.application.routes.draw do
   resources :sessions
   resources :users
   resources :products
+
+
+
+  root 'leads#new'
+
 
 end

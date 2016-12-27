@@ -1,8 +1,9 @@
 FactoryGirl.define do
   factory :lead do
-    surname "MyString"
-email "MyString"
-form_hash "MyText"
+    name "MyString"
+    email "MyString"
+    form_hash 1
+    stage nil
   end
 
 end
