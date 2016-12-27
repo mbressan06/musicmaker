@@ -1,0 +1,16 @@
+- @leads.each do |lead|
+  tr
+    td
+      = lead.name
+    td
+      = lead.email
+    td
+      = lead.form_hash
+    td
+      = lead.stage
+    td
+      = link_to 'Show', lead
+    td
+      = link_to 'Edit', edit_lead_path(lead)
+    td
+      = link_to 'Destroy', lead, method: :delete, data: { confirm: 'Are you sure?' }

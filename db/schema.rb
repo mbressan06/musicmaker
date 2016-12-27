@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20110426072324) do
+ActiveRecord::Schema.define(version: 20161227013045) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,17 @@ ActiveRecord::Schema.define(version: 20110426072324) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
+  create_table "leads", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.integer  "form_hash"
+    t.integer  "stage_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "leads", ["stage_id"], name: "index_leads_on_stage_id", using: :btree
+
   create_table "line_items", force: true do |t|
     t.integer  "order_id"
     t.integer  "product_id"
@@ -85,6 +96,12 @@ ActiveRecord::Schema.define(version: 20110426072324) do
 
   add_index "products", ["available_on"], name: "index_products_on_available_on", using: :btree
   add_index "products", ["featured"], name: "index_products_on_featured", using: :btree
+
+  create_table "stages", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "username"

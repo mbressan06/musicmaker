@@ -1,0 +1,23 @@
+- title @product.title
+= image_tag "products/#{@product.image_file_name}", :id => "product-image"
+#product-description
+  - if @product.description
+    = simple_format @product.description
+  - else
+    p
+      em
+        | No Description
+  p
+    strong
+      | Price:
+    = number_to_currency @product.price
+    |  (
+    = link_to "Add to Card", add_to_cart_path(@product.id)
+    | ) 
+  p
+    strong
+      | By:
+    = @product.author
+  p
+    = link_to "Back to All Products", products_path
+div[style="clear:both;"]
